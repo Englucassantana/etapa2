@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <title>Clinica Accenture</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div id="sidebar-button">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </button>
+                
+            </div>
+            <div id="title">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FF6347"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-8.5-2h3v-3.5H17v-3h-3.5V7h-3v3.5H7v3h3.5z"/></svg>
+                <span>Centro Médico Accenture</span>  
+            </div>
+                      
+        </header>
+
+        <main>
+            <aside>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Agendar Consulta</a></li>
+                    <li>Especialidades</li>
+                </ul>
+            </aside>
+
+            <div id="content">
+                <div id="content-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Demanda</th>
+                                <th>Capacidade</th>
+                                <th>Atendimento Planejado</th>
+                                <th>Atendimento Realizado</th>
+                                <th>Desvio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>                        
+                    </table>
+                </div>
+                <div id="content-chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            Contato
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/table/data.js"></script>
+    <script src="./js/table/Table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="./js/chart/setup.js"></script>
+    <script src="./js/chart/config.js"></script>    
+    <script src="./js/chart/chart.js"></script>
+    <script src="./colapse-menu.js"></script>
+
+    
+</body>
+</html>
