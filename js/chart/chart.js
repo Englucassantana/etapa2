@@ -43,7 +43,58 @@ const config = {
         },
         plugins:{
             legend :{
-                display:false
+                display:true,
+                labels:
+                    {
+                        generateLabels:(chart) =>{
+                            return [
+                            {
+                                text: 'Sobrecarga de Atendimento',
+                                borderRadius: 1,
+                                datasetIndex: 1,
+                                fillStyle: 'rgba(255, 235, 238,0.8)',
+                                fontColor: '#000000',
+                                hidden: false,
+                                lineCap: "square",
+                                lineDash: [],
+                                lineDashOffset: 0,
+                                lineJoin: "miter",
+                                lineWidth: 1,
+                                strokeStyle: 'rgb(183, 28, 28)'
+                            },
+                            {
+                                text: 'Poucos Atendimentos',
+                                borderRadius: 1,
+                                datasetIndex: 1,
+                                fillStyle: 'rgba(255, 253, 231, 0.8)',
+                                fontColor: '#000000',
+                                hidden: false,
+                                lineCap: "square",
+                                lineDash: [],
+                                lineDashOffset: 0,
+                                lineJoin: "miter",
+                                lineWidth: 1,
+                                strokeStyle: 'rgb(249, 168, 37)'
+                            },
+
+                            {
+                                text: 'Dentro da capacidade',
+                                borderRadius: 1,
+                                datasetIndex: 1,
+                                fillStyle: 'rgba(232, 245, 233, 0.8)',
+                                fontColor: '#000000',
+                                hidden: false,
+                                lineCap: "square",
+                                lineDash: [],
+                                lineDashOffset: 0,
+                                lineJoin: "miter",
+                                lineWidth: 1,
+                                strokeStyle: 'rgb(27, 94, 32)'
+                            }
+                            
+                        ]
+                        }
+                    }
             }
         },
 
