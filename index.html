@@ -13,23 +13,29 @@
         <header>
             <div id="sidebar-button">
                 <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#29B6F6"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
                 </button>
                 
             </div>
             <div id="title">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FF6347"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-8.5-2h3v-3.5H17v-3h-3.5V7h-3v3.5H7v3h3.5z"/></svg>
-                <span>Centro Médico Accenture</span>  
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 24 24" width="50px" fill="#039BE5"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-8.5-2h3v-3.5H17v-3h-3.5V7h-3v3.5H7v3h3.5z"/></svg>
+                <span>Centro Médico</span>  
             </div>
                       
         </header>
 
         <main>
             <aside>
-                <ul>
+                <ul class="menu">
                     <li><a href="">Home</a></li>
                     <li><a href="">Agendar Consulta</a></li>
-                    <li>Especialidades</li>
+                    <li>
+                        <a class="accordion-control">Especialidades</a>
+                        <ul class="accordion-panel" style="display: none;">
+                            <li>Oftalmologista</li>
+                            <li>Pediátra</li>
+                        </ul>
+                    </li>
                 </ul>
             </aside>
 
@@ -51,13 +57,16 @@
                     </table>
                 </div>
                 <div id="content-chart">
-                    <canvas id="myChart"></canvas>
+                    <canvas id="chart"></canvas>
                 </div>
             </div>
         </main>
 
         <footer>
-            Contato
+            <div class="contact">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#808080"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M21,12.22C21,6.73,16.74,3,12,3c-4.69,0-9,3.65-9,9.28C2.4,12.62,2,13.26,2,14v2c0,1.1,0.9,2,2,2h1v-6.1 c0-3.87,3.13-7,7-7s7,3.13,7,7V19h-8v2h8c1.1,0,2-0.9,2-2v-1.22c0.59-0.31,1-0.92,1-1.64v-2.3C22,13.14,21.59,12.53,21,12.22z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M18,11.03C17.52,8.18,15.04,6,12.05,6c-3.03,0-6.29,2.51-6.03,6.45c2.47-1.01,4.33-3.21,4.86-5.89 C12.19,9.19,14.88,11,18,11.03z"/></g></g></svg>
+                <span>(71) 98510-0276</span>
+            </div>            
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -68,6 +77,7 @@
     <script src="./js/chart/config.js"></script>    
     <script src="./js/chart/chart.js"></script>
     <script src="./colapse-menu.js"></script>
+    <script src="./js/menu/accordion-menu.js"></script>
 
     
 </body>
